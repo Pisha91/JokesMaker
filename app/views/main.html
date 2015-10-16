@@ -1,0 +1,27 @@
+<div class="form-container">
+    <div>
+        <h3>Joke</h3>
+
+        <div class="form-row text-block">
+            {{joke.text}}
+        </div>
+        <div>
+            <div class="line-block">
+                <h5>{{joke.likeCount}} Like</h5>
+            </div>
+            <div class="line-block">
+                <button class="btn btn-sm btn-primary" ng-click="like()">Like</button>
+            </div>
+            <div class="line-block">
+                <h5>{{joke.dislikeCount}} Dislike</h5>
+            </div>
+            <div class="line-block">
+                <button class="btn btn-sm btn-primary" ng-click="dislike()">Dislike</button>
+            </div>
+            <div class="line-block">
+                <button class="btn btn-sm btn-success" ng-click="next()">Next Joke</button>
+            </div>
+            <br/>
+        </div>
+    </div>
+</div>

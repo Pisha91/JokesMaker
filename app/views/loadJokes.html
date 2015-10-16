@@ -1,0 +1,12 @@
+<div class="form-container">
+    <h3>Please enter jokes separated by '@@@@'</h3>
+<form name="loadJokesForm">
+    <div class="form-row" ng-class="{'has-error' : loadJokesForm.jokesTextArea.$invalid && loadJokesForm.jokesTextArea.$dirty}">
+            <textarea placeholder="Jokes" name="jokesTextArea" class="form-control jokes-textarea" ng-model="jokesString" required></textarea>
+    </div>
+    <span class="error-text" ng-show="loadJokesForm.jokesTextArea.$error.required && loadJokesForm.jokesTextArea.$dirty">Jokes is required.</span>
+    <div class="form-row">
+        <button class="btn btn-primary btn-lg" ng-click="submit(jokesString)" ng-disabled="loadJokesForm.$invalid || submited">Load</button>
+    </div>
+</form>
+</div>
