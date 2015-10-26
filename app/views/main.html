@@ -1,5 +1,5 @@
 <div class="form-container">
-    <div>
+    <div ng-show="joke">
         <h3>Joke</h3>
 
         <div class="form-row text-block">
@@ -23,5 +23,8 @@
             </div>
             <br/>
         </div>
+    </div>
+    <div ng-show="!joke">
+        <h3>There are no saved jokes in storage.</h3>
     </div>
 </div>

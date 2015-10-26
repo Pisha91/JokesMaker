@@ -38,7 +38,7 @@ angular.module('JokesMaker')
                 storage.setItem(currentItemIndexKey, currentItemIndex);
                 var jokes = getItems();
 
-                return jokes[currentItemIndex];
+                return jokes ? jokes[currentItemIndex] : null;
             },
             updateCurrentItem: function(item){
                 var currentItemIndex = storage.getItem(currentItemIndexKey);
